@@ -1,0 +1,66 @@
+#apple-maps-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 9999;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#apple-maps-notification h3 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#apple-maps-notification p {
+    margin: 0 0 15px;
+    font-size: 14px;
+}
+
+#apple-maps-notification button {
+    margin: 5px 10px 5px 0;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+#apple-maps-notification button#openAppleMaps {
+    background-color: #007AFF;
+    color: white;
+}
+
+#apple-maps-notification button#openAppleMaps:hover {
+    background-color: #0056b3;
+}
+
+#apple-maps-notification button#cancelNotification {
+    background-color: #f1f3f4;
+    color: #333;
+}
+
+#apple-maps-notification button#cancelNotification:hover {
+    background-color: #e1e3e4;
+}
+
+#apple-maps-notification .progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: #007AFF;
+    width: 0;
+    transition: width 5s linear;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

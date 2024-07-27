@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Open in Apple Maps Options</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Open in Apple Maps Options</h1>
+  <label>
+    Notification Duration (seconds):
+    <input type="number" id="notificationDuration" min="1" max="30">
+  </label>
+  <label>
+    <input type="checkbox" id="autodetectEnabled">
+    Enable Autodetect on Google Maps
+  </label>
+  <button id="save">Save</button>
+
+  <script src="options.js"></script>
+</body>
+
+</html>

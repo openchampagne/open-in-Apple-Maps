@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Open in Apple Maps",
+  "version": "1.0",
+  "description": "Prompt to open Google Maps links in Apple Maps, Right Click to Search Apple Maps",
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "*://*.google.com/maps/*",
+    "*://*.google.com/maps"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.google.com/maps/*",
+        "*://*.google.com/maps"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ]
+    }
+  ],
+  "options_page": "options.html",
+  "icons": {
+    "128": "icon.png"
+  }
+}
